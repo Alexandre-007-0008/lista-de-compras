@@ -29,7 +29,7 @@ export default function Lista() {
     }, [lista])
     return (
         <>
-            <h1>Lista de compras</h1>
+            <h1>Lista de produtos</h1>
 
             <div>
                 <input name="item" onChange={handleChange} value={itemname} />
