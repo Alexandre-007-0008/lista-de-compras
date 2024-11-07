@@ -14,7 +14,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
   
     return (
       <>
-        Esporte: { slug }
+        Products: { slug }
       </>
     )
   }

@@ -1,27 +1,27 @@
 import Link from "next/link"
 
-const ESPORTES = [
+const PRODUCTS = [
   {
-    name: 'Futebol', slug: 'futebol'
+    name: 'LED', slug: 'led'
   },
   {
-    name: 'Vôlei', slug: 'volei',
+    name: 'Resistor', slug: 'resistor',
   }
 ]
 
 export default function Dashboard() {
   return (
     <>
-      <h1>Esportes</h1>
+      <h1>Products</h1>
 
       <hr />
 
       <ul>
         {
-          ESPORTES.map((esporte, index) => {
+          PRODUCTS.map((products, index) => {
             return (
               <li key={index}>
-                <Link href={`/esportes/${esporte.slug}`}>{esporte.name}</Link>
+                <Link href={`/products/${products.slug}`}>{products.name}</Link>
               </li>
             )
           })
